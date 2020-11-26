@@ -26,7 +26,15 @@
 - задача на *две звёздочки*: выкатить куда-либо с помощью github-actions/gitlab/jenkins/etc
 
 ## DONE
+- [x] is_alive_host logic
+- [x] tests
+- [x] service
+- [x] Docker
+- [ ] github actions
+
+## Installation and run
 Uses Python 3.9, aiohttp, FastAPI, pytest-asyncio  
+
 1. install dependencies  
   `pip install -r requirements.txt`
 2. run tests:  
@@ -35,4 +43,7 @@ Uses Python 3.9, aiohttp, FastAPI, pytest-asyncio
 dev:  
 `uvicorn service:app --host=127.0.0.1 --port=8001 --reload`  
 prod:  
-`gunicorn service:app --bind=127.0.0.1:8001 -w 4  -k uvicorn.workers.UvicornH11Worker`
+`gunicorn service:app --bind=127.0.0.1:8001 -w 4  -k uvicorn.workers.UvicornH11Worker`  
+docker:  
+`docker build --tag petrov-python-intern:latest .`  
+`docker run -p 8001:8001 -d --name petrov-python-intern petrov-python-intern:latest`
