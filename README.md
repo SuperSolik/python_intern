@@ -24,3 +24,15 @@
 
 - задача со *звёздочкой*: завернуть приложение в docker
 - задача на *две звёздочки*: выкатить куда-либо с помощью github-actions/gitlab/jenkins/etc
+
+## DONE
+Uses Python 3.9, aiohttp, FastAPI, pytest-asyncio  
+1. install dependencies  
+  `pip install -r requirements`
+2. run tests:  
+  `pytest tests.py`
+3. start  
+dev:  
+`uvicorn service:app --host=127.0.0.1 --port=8001 --reload`  
+prod:  
+`gunicorn service:app --bind=127.0.0.1:8001 -w 4  -k uvicorn.workers.UvicornH11Worker`
