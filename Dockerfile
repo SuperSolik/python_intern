@@ -9,4 +9,4 @@ WORKDIR /app/
 COPY ./app.py /app
 COPY ./service.py /app
 
-CMD gunicorn service:app --bind=0.0.0.0:8001 -w 4 -k uvicorn.workers.UvicornH11Worker
+CMD gunicorn service:app --bind=0.0.0.0:$PORT -w 4 -k uvicorn.workers.UvicornH11Worker
