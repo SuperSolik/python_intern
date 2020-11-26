@@ -46,4 +46,6 @@ prod:
 `gunicorn service:app --bind=127.0.0.1:8001 -w 4  -k uvicorn.workers.UvicornH11Worker`  
 docker:  
 `docker build --tag petrov-python-intern:latest .`  
-`docker run -p 8001:8001 -e PORT=8001 -d --name petrov-python-intern petrov-python-intern:latest`
+`docker run -p 8001:8001 -e PORT=8001 -d --name petrov-python-intern petrov-python-intern:latest`  
+heroku:  
+app available at `https://semrush-petrov-python-intern.herokuapp.com/`
