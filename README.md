@@ -28,7 +28,7 @@
 ## DONE
 Uses Python 3.9, aiohttp, FastAPI, pytest-asyncio  
 1. install dependencies  
-  `pip install -r requirements`
+  `pip install -r requirements.txt`
 2. run tests:  
   `pytest tests.py`
 3. start  
