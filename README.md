@@ -28,9 +28,9 @@
 ## DONE
 - [x] is_alive_host logic
 - [x] tests
-- [x] service
+- [x] service 
 - [x] Docker
-- [ ] github actions
+- [x] github actions
 
 ## Installation and run
 Uses Python 3.9, aiohttp, FastAPI, pytest-asyncio  
