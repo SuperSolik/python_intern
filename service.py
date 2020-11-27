@@ -9,7 +9,7 @@ app = FastAPI()
 
 
 @app.get('/healthz')
-async def shutdown_event(hostname: str):
+async def check_health_view(hostname: str):
     is_alive = await is_alive_host(hostname, app.client_session)
     return {
         'status': 'up' if is_alive else 'down'
