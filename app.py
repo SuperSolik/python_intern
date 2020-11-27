@@ -17,14 +17,3 @@ async def is_alive_host(hostname: str, client_session: aiohttp.ClientSession) ->
         result = False
 
     return result
-
-
-
-
-
-
-
-
-
-
-
